@@ -24,44 +24,10 @@ export default function ExperiencePage() {
 
   const experiences = [
     {
-      id: 'outlier',
-      company: 'Outlier',
-      role: 'Software Engineer for AI Training',
-      period: 'Oct 2023 - Present',
-      location: 'Remote',
-      type: 'Full-time',
-      typeColor: 'green',
-      icon: '🤖',
-      description: 'As a Software Engineer for AI Training at Outlier, I work at the intersection of artificial intelligence and quality assurance. My primary responsibility involves training and evaluating large language models by analyzing their responses and providing feedback to improve accuracy and reliability. I collaborate with cross-functional teams of researchers and engineers to implement quality assurance protocols that ensure AI-generated content meets high standards.',
-      responsibilities: [
-        'Training AI models by evaluating and improving their responses',
-        'Collaborating with cross-functional teams to enhance AI performance',
-        'Implementing quality assurance protocols for AI-generated content',
-        'Developing evaluation metrics for AI model performance',
-      ],
-    },
-    {
-      id: 'freelance',
-      company: 'Freelance / Self-Employed',
-      role: 'Full Stack Developer',
-      period: '2024 - Present',
-      location: 'Remote',
-      type: 'Freelance',
-      typeColor: 'blue',
-      icon: '💻',
-      description: 'As a Freelance Full Stack Developer, I build custom web applications for diverse clients across various industries. I handle end-to-end development using modern technologies including Next.js, React, and Node.js, ensuring scalable and maintainable codebases. My work involves designing RESTful APIs, managing databases with PostgreSQL and Prisma, and deploying applications on cloud platforms like Vercel and AWS.',
-      responsibilities: [
-        'Building custom web applications for clients',
-        'End-to-end development using Next.js, React, and Node.js',
-        'API development and database management',
-        'Client consultation and project delivery',
-      ],
-    },
-    {
-      id: 'startup',
-      company: 'Admission Consultancy Startup',
+      id: 'courseadmission',
+      company: 'CourseAdmission / CareerSathi',
       role: 'Full Stack Developer / Founder',
-      period: '2024 - Present',
+      period: 'Apr 2026 - Present',
       location: 'Remote',
       type: 'Startup',
       typeColor: 'purple',
@@ -72,6 +38,74 @@ export default function ExperiencePage() {
         'Developing college comparison tools and AI chatbots',
         'Managing product development and deployment',
         'Handling technical architecture and infrastructure',
+      ],
+    },
+    {
+      id: 'qagpt',
+      company: 'Q&A GPT',
+      role: 'AI Chatbot Developer',
+      period: 'Apr 2026 - Present',
+      location: 'Remote',
+      type: 'AI',
+      typeColor: 'green',
+      icon: '🤖',
+      description: 'Built an AI-powered conversational chatbot using Vapi API. Implemented real-time streaming responses, natural language understanding, and customizable response generation for a seamless user experience.',
+      responsibilities: [
+        'Built an AI-powered conversational chatbot using Vapi API',
+        'Implemented real-time streaming responses',
+        'Developed natural language understanding capabilities',
+        'Created customizable response generation system',
+      ],
+    },
+    {
+      id: 'freelance',
+      company: 'Freelance / Self-Employed',
+      role: 'Full Stack Developer',
+      period: 'Oct 2025 - Present',
+      location: 'Remote',
+      type: 'Freelance',
+      typeColor: 'blue',
+      icon: '💻',
+      description: 'As a Freelance Full Stack Developer, I build custom web applications for diverse clients across various industries. I handle end-to-end development using modern technologies including Next.js, React, and Node.js, ensuring scalable and maintainable codebases.',
+      responsibilities: [
+        'Building custom web applications for clients',
+        'End-to-end development using Next.js, React, and Node.js',
+        'API development and database management',
+        'Client consultation and project delivery',
+      ],
+    },
+    {
+      id: 'outlier',
+      company: 'Outlier',
+      role: 'Software Engineer for AI Training',
+      period: 'Oct 2023 - Jul 2025',
+      location: 'Remote',
+      type: 'Full-time',
+      typeColor: 'green',
+      icon: '🤖',
+      description: 'As a Software Engineer for AI Training at Outlier, I worked at the intersection of artificial intelligence and quality assurance. My primary responsibility involved training and evaluating large language models by analyzing their responses and providing feedback to improve accuracy and reliability.',
+      responsibilities: [
+        'Training AI models by evaluating and improving their responses',
+        'Collaborating with cross-functional teams to enhance AI performance',
+        'Implementing quality assurance protocols for AI-generated content',
+        'Developing evaluation metrics for AI model performance',
+      ],
+    },
+    {
+      id: 'aws-intern',
+      company: 'AICTE',
+      role: 'AWS Cloud Virtual Intern',
+      period: 'May 2023 - Jun 2023',
+      location: 'Remote',
+      type: 'Internship',
+      typeColor: 'blue',
+      icon: '☁️',
+      description: 'Completed hands-on training in AWS cloud services, deployed and managed cloud infrastructure, worked on cloud-based solution architecture, and implemented cloud security best practices.',
+      responsibilities: [
+        'Completed hands-on training in AWS cloud services',
+        'Deployed and managed cloud infrastructure',
+        'Worked on cloud-based solution architecture',
+        'Implemented cloud security best practices',
       ],
     },
   ];
@@ -105,17 +139,12 @@ export default function ExperiencePage() {
         { name: 'Prisma ORM', level: 88 },
         { name: 'Node.js', level: 85 },
         { name: 'FastAPI', level: 80 },
-        { name: 'GraphQL', level: 75 },
       ],
     },
     {
       title: 'AI / ML',
       skills: [
-        { name: 'Transformers', level: 88 },
-        { name: 'PyTorch', level: 85 },
-        { name: 'NumPy / Pandas', level: 85 },
-        { name: 'scikit-learn', level: 82 },
-        { name: 'Computer Vision', level: 80 },
+        { name: 'NumPy / Pandas', level: 65 },
       ],
     },
     {
@@ -124,8 +153,7 @@ export default function ExperiencePage() {
         { name: 'Prompt Engineering', level: 92 },
         { name: 'RAG Pipelines', level: 90 },
         { name: 'LangChain', level: 85 },
-        { name: 'Fine-tuning & Evals', level: 82 },
-        { name: 'Multi-Agent Systems', level: 80 },
+        { name: 'LLM Evaluation & Testing', level: 82 },
       ],
     },
     {
@@ -134,8 +162,8 @@ export default function ExperiencePage() {
         { name: 'PostgreSQL', level: 90 },
         { name: 'Vercel', level: 90 },
         { name: 'AWS (EC2, S3, RDS)', level: 85 },
-        { name: 'Docker', level: 80 },
-        { name: 'Redis', level: 78 },
+        { name: 'Supabase', level: 78 },
+        { name: 'ChromaDB (Vector Databases)', level: 75 },
       ],
     },
   ];
@@ -145,7 +173,7 @@ export default function ExperiencePage() {
       icon: '📜',
       title: 'Full-Stack Web Development Bootcamp',
       subtitle: '62 Hours',
-      issuer: 'Udemy 2024',
+      issuer: 'Udemy · Jan 2026',
       link: 'https://www.udemy.com/certificate/UC-029a39af-db11-428b-bfed-98eb81c71d46/',
       learnings: [
         'Built production-ready full-stack applications with Next.js and React',
@@ -157,7 +185,7 @@ export default function ExperiencePage() {
       icon: '📜',
       title: 'Data Structures & Algorithms',
       subtitle: '46.5 Hours',
-      issuer: 'Udemy 2024',
+      issuer: 'Udemy · Aug 2025',
       link: 'https://www.udemy.com/certificate/UC-919160b1-2ab3-4615-8cee-dca086b42620/',
       learnings: [
         'Solved 100+ DSA problems covering arrays, trees, and graphs',
@@ -169,7 +197,7 @@ export default function ExperiencePage() {
       icon: '📜',
       title: 'Prompt Engineering',
       subtitle: '16 Hours',
-      issuer: 'Udemy 2024',
+      issuer: 'Udemy · Mar 2026',
       link: 'https://www.udemy.com/certificate/UC-0416a114-93ea-4c5e-8481-b7357b29131a/',
       learnings: [
         'Designed effective prompts for LLMs like GPT and Claude',
@@ -181,7 +209,7 @@ export default function ExperiencePage() {
       icon: '☁️',
       title: 'AWS Cloud Virtual Internship',
       subtitle: '',
-      issuer: 'AICTE 2023',
+      issuer: 'AICTE · 2023',
       link: null,
       learnings: [
         'Hands-on experience with AWS EC2, S3, and RDS',
@@ -193,7 +221,7 @@ export default function ExperiencePage() {
       icon: '🏅',
       title: 'Weekly Coding Challenge',
       subtitle: '',
-      issuer: 'Unstop 2023',
+      issuer: 'Unstop · 2023',
       link: null,
       learnings: [
         'Participated in weekly competitive programming',
@@ -294,7 +322,7 @@ export default function ExperiencePage() {
           <span className="text-[#D96B27]/20 mx-1">✦</span>
 
           <a
-            href="https://github.com/arnavsai"
+            href="https://github.com/arnav20719"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium bg-white text-[#6B655B] hover:text-[#D96B27] border border-[#E8E3DC] hover:border-[#D96B27]/40 transition-all"
@@ -314,14 +342,13 @@ export default function ExperiencePage() {
           </a>
 
           <a
-            href="mailto:arnav@email.com"
+            href="mailto:arnavsawarn143@gmail.com"
             className="inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium bg-white text-[#6B655B] hover:text-[#D96B27] border border-[#E8E3DC] hover:border-[#D96B27]/40 transition-all"
           >
             <Mail className="w-4 h-4" />
             Email
           </a>
 
-          {/* Available for work - Full Sentence */}
           <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium bg-green-50 text-green-700 border border-green-200">
             <span className="relative flex items-center justify-center">
               <span className="absolute w-3 h-3 rounded-full bg-green-500 animate-ping opacity-75"></span>
@@ -449,8 +476,8 @@ export default function ExperiencePage() {
                 </span>
                 <ul className="mt-3 space-y-1.5">
                   <li className="flex items-start gap-2 text-sm text-[#6B655B]">
-                    <span className="text-[#D96B27]">✓</span>
-                    <span>IEEE-published undergraduate researcher (2025)</span>
+                    
+                
                   </li>
                   <li className="flex items-start gap-2 text-sm text-[#6B655B]">
                     <span className="text-[#D96B27]">✓</span>
