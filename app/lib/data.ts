@@ -54,7 +54,7 @@ export const projects: Project[] = [
     approach: 'Built an AI-powered admission platform that centralizes college data and provides intelligent matching. Developed a custom chatbot trained on college data to answer student queries instantly. Created a comprehensive comparison tool and lead generation system to streamline the entire admission journey.',
     techStack: ['Next.js 16', 'React 19', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'TypeScript'],
     liveUrl: 'https://careersathhi.com/',
-    githubUrl: 'https://github.com/arnavsai',
+    githubUrl: 'https://github.com/arnav20719',
     features: [
       'AI-powered chatbot with custom context trained on 4,760+ colleges',
       'College comparison tool with filters for courses, fees, location, and rankings',
@@ -68,12 +68,12 @@ export const projects: Project[] = [
     id: 'shiksha-chat',
     title: 'Students College Assistant',
     description: 'Production RAG system for Indian college admissions Q&A',
-    longDescription: 'A production RAG system for Indian college admissions Q&A. Students ask natural-language questions and get grounded answers with clickable source citations — no hallucinations, no made-up data.',
+    longDescription: 'A production RAG system for Indian college admissions Q&A. Students ask natural-language questions like "Which IIT has the highest placement salary?" and get grounded answers with clickable source citations — no hallucinations, no made-up data.',
     problem: 'Most college search tools are filter-based and rigid. Students struggle to find answers to natural-language questions about fees, rankings, and placements across IITs and Bihar institutions.',
     approach: 'Built a RAG pipeline with semantic chunking by entity type, in-memory ChromaDB on Render, lazy vector store rebuild on cold start, and source-aware generation where the LLM cites URLs from metadata and refuses to answer when context is missing.',
     techStack: ['FastAPI', 'LangChain', 'OpenAI', 'ChromaDB', 'Next.js 15', 'TypeScript', 'Tailwind CSS', 'Render', 'Vercel'],
     liveUrl: 'https://shiksha-chat.vercel.app/',
-    githubUrl: 'https://github.com/arnavsai/shiksha-chat',
+    githubUrl: 'https://github.com/arnav20719/shiksha-chat',
     features: [
       'Natural-language Q&A with grounded, cited answers',
       'Semantic chunking by entity type (one document per college)',
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     approach: 'Integrated Vapi API with a custom React frontend to create a conversational AI that understands context, maintains conversation flow, and delivers accurate responses. Built a seamless user experience with real-time streaming responses.',
     techStack: ['Next.js', 'React', 'Vapi API', 'TypeScript', 'Tailwind CSS'],
     liveUrl: 'https://project-s479m.vercel.app',
-    githubUrl: 'https://github.com/arnavsai',
+    githubUrl: 'https://github.com/arnav20719',
     features: [
       'Real-time conversational AI with natural language understanding',
       'Contextual responses with multi-turn conversation support',
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     approach: 'Developed a custom FAQ-based AI chatbot from scratch using intelligent matching algorithms. Built with Next.js and React, it uses a structured knowledge base and semantic matching to provide accurate responses without any external API calls.',
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Custom AI Logic'],
     liveUrl: '#',
-    githubUrl: 'https://github.com/arnavsai',
+    githubUrl: 'https://github.com/arnav20719',
     features: [
       'FAQ-based intelligence with semantic matching',
       'Zero API costs - fully self-contained',
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     approach: 'Built with Next.js 15 and React 19, using TypeScript for type safety and Tailwind CSS for styling. Implemented a command palette for quick navigation, dark/light mode toggle, and Framer Motion for smooth animations. Optimized for SEO and performance.',
     techStack: ['Next.js 15', 'React 19', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     liveUrl: '#',
-    githubUrl: 'https://github.com/arnavsai',
+    githubUrl: 'https://github.com/arnav20719',
     features: [
       'Dark/Light mode toggle with system preference detection',
       'Command palette (⌘K) for quick navigation',
@@ -310,7 +310,7 @@ export const certifications: Certification[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { id: 'github', platform: 'github', url: 'https://github.com/arnavsai' },
+  { id: 'github', platform: 'github', url: 'https://github.com/arnav20719' },
   { id: 'linkedin', platform: 'linkedin', url: 'https://linkedin.com/in/arnavsai' },
   { id: 'email', platform: 'email', url: 'mailto:arnavsawarn143@gmail.com' },
   { id: 'phone', platform: 'phone', url: 'tel:+917294920365' },
