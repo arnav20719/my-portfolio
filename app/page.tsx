@@ -43,8 +43,8 @@ export default function HomePage() {
             },
             {
               icon: '🔗',
-              title: 'RAG & Multi-Agent',
-              desc: 'Retrieval-augmented generation and autonomous agent orchestration.'
+              title: 'RAG Engineering',
+              desc: 'Retrieval-augmented generation for accurate, grounded AI responses.'
             },
             {
               icon: '⚙️',
@@ -53,8 +53,8 @@ export default function HomePage() {
             },
             {
               icon: '🤖',
-              title: 'AI Automation',
-              desc: 'Intelligent workflows, automation pipelines, and AI-powered tools.'
+              title: 'AI Chatbot Development',
+              desc: 'Conversational AI chatbots with fast, accurate Q&A responses.'
             }
           ].map((service, i) => (
             <div key={i} className="card text-center hover:border-[#D9531E]/50 group">
@@ -216,7 +216,7 @@ export default function HomePage() {
       </section>
 
       {/* ===== CONTACT SECTION ===== */}
-      <section className="section-padding bg-[#FDFBF7]">
+      <section id="contact" className="section-padding bg-[#FDFBF7]">
         <div className="container-custom">
           <div className="text-center mb-12">
             <span className="badge badge-accent">📧 Contact</span>
@@ -247,15 +247,15 @@ export default function HomePage() {
               {/* Email */}
               <div className="bg-white rounded-2xl p-6 border border-[#E8E3DC] hover:border-[#D9531E]/30 transition-all duration-300">
                 <h4 className="text-xs font-semibold text-[#6B655B] uppercase tracking-wider mb-2">Email</h4>
-                <a href="mailto:arnav@email.com" className="text-[#1A1A1A] font-medium hover:text-[#D9531E] transition-colors">
-                  arnav@email.com
+                <a href="mailto:arnavsawarn143@gmail.com" className="text-[#1A1A1A] font-medium hover:text-[#D9531E] transition-colors">
+                  arnavsawarn143@gmail.com
                 </a>
               </div>
 
               {/* Location */}
               <div className="bg-white rounded-2xl p-6 border border-[#E8E3DC] hover:border-[#D9531E]/30 transition-all duration-300">
                 <h4 className="text-xs font-semibold text-[#6B655B] uppercase tracking-wider mb-2">Location</h4>
-                <p className="text-[#1A1A1A] font-medium">India</p>
+                <p className="text-[#1A1A1A] font-medium">India · Open to Hybrid</p>
               </div>
 
               {/* Social Links */}
@@ -263,7 +263,7 @@ export default function HomePage() {
                 <h4 className="text-xs font-semibold text-[#6B655B] uppercase tracking-wider mb-3">Connect</h4>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="https://github.com/arnavsai"
+                    href="https://github.com/arnav20719"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F7F2EB] text-[#6B655B] hover:text-[#D9531E] border border-[#E8E3DC] hover:border-[#D9531E]/40 transition-all"
@@ -281,7 +281,7 @@ export default function HomePage() {
                     LinkedIn
                   </a>
                   <a
-                    href="mailto:arnav@email.com"
+                    href="mailto:arnavsawarn143@gmail.com"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F7F2EB] text-[#6B655B] hover:text-[#D9531E] border border-[#E8E3DC] hover:border-[#D9531E]/40 transition-all"
                   >
                     <Mail className="w-4 h-4" />
