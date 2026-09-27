@@ -151,7 +151,6 @@ export const skills: Skill[] = [
   { id: 'sql', name: 'SQL', category: 'languages' },
   { id: 'html5', name: 'HTML5', category: 'languages' },
   { id: 'css3', name: 'CSS3', category: 'languages' },
-  { id: 'java', name: 'Java', category: 'languages' },
   { id: 'cpp', name: 'C++', category: 'languages' },
   
   // Frontend
@@ -166,12 +165,8 @@ export const skills: Skill[] = [
   
   // Backend
   { id: 'nodejs', name: 'Node.js', category: 'backend' },
-  { id: 'express', name: 'Express.js', category: 'backend' },
   { id: 'fastapi', name: 'FastAPI', category: 'backend' },
   { id: 'restapis', name: 'REST APIs', category: 'backend' },
-  { id: 'websockets', name: 'WebSockets', category: 'backend' },
-  { id: 'jwt', name: 'JWT Authentication', category: 'backend' },
-  { id: 'microservices', name: 'Microservices', category: 'backend' },
   
   // Database
   { id: 'prisma', name: 'Prisma ORM', category: 'database' },
