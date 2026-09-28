@@ -84,7 +84,7 @@ export function Hero() {
             {/* Stats */}
             <div className="flex flex-wrap gap-6 mt-6">
               <div>
-                <span className="text-2xl font-bold text-[#D9531E]">2+</span>
+                <span className="text-2xl font-bold text-[#D9531E]">1+</span>
                 <span className="text-sm text-[#6B655B] ml-1">Years Applied</span>
               </div>
               <div>
