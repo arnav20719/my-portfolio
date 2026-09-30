@@ -379,7 +379,7 @@ export default function HomePage() {
 
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com/in/arnavsai"
+                  href="https://www.linkedin.com/in/arnav-raj-111z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-4 p-4 bg-white rounded-xl border border-[#E8E3DC] hover:border-[#0A66C2]/50 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
@@ -389,7 +389,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="text-sm font-bold text-[#1A1A1A]">LinkedIn</h4>
-                    <p className="text-xs text-[#6B655B]">in/arnavsai</p>
+                    <p className="text-xs text-[#6B655B]">in/arnav-raj-111z</p>
                   </div>
                   <span className="text-xs text-[#0A66C2] font-medium group-hover:translate-x-1 transition-transform">→</span>
                 </a>

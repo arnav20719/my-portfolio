@@ -51,7 +51,7 @@ export function Footer() {
     { id: 'whatsapp', name: 'WhatsApp', href: 'https://wa.me/917294920365', icon: <WhatsappIcon />, color: '#25D366' },
     { id: 'call', name: 'Call', href: 'tel:+917294920365', icon: <PhoneIcon />, color: '#3B82F6' },
     { id: 'email', name: 'Email', href: 'mailto:arnavsawarn143@gmail.com', icon: <MailIcon />, color: '#D9531E' },
-    { id: 'linkedin', name: 'LinkedIn', href: 'https://linkedin.com/in/arnavsai', icon: <LinkedinIcon />, color: '#0A66C2' },
+    { id: 'linkedin', name: 'LinkedIn', href: 'https://www.linkedin.com/in/arnav-raj-111z', icon: <LinkedinIcon />, color: '#0A66C2' },
     { id: 'github', name: 'GitHub', href: 'https://github.com/arnav20719', icon: <GithubIcon />, color: '#FFFFFF' },
   ];
 

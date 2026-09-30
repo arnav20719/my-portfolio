@@ -332,7 +332,7 @@ export default function ExperiencePage() {
           </a>
 
           <a
-            href="https://linkedin.com/in/arnavsai"
+            href="https://www.linkedin.com/in/arnav-raj-111z"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium bg-white text-[#6B655B] hover:text-[#D96B27] border border-[#E8E3DC] hover:border-[#D96B27]/40 transition-all"

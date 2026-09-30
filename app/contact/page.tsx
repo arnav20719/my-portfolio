@@ -77,7 +77,7 @@ export default function ContactPage() {
 
   const socialLinks = [
     { id: 'github', href: 'https://github.com/arnav20719', icon: <GithubIcon />, label: 'GitHub', color: '#1A1A1A' },
-    { id: 'linkedin', href: 'https://linkedin.com/in/arnavsai', icon: <LinkedinIcon />, label: 'LinkedIn', color: '#0A66C2' },
+    { id: 'linkedin', href: 'https://www.linkedin.com/in/arnav-raj-111z', icon: <LinkedinIcon />, label: 'LinkedIn', color: '#0A66C2' },
     { id: 'email', href: 'mailto:arnavsawarn143@gmail.com', icon: <Mail style={{ width: '22px', height: '22px' }} />, label: 'Email', color: '#D9531E' },
     { id: 'call', href: 'tel:+917294920365', icon: <Phone style={{ width: '22px', height: '22px' }} />, label: 'Call', color: '#3B82F6' },
     { id: 'whatsapp', href: 'https://wa.me/917294920365', icon: <WhatsappIcon />, label: 'WhatsApp', color: '#25D366' },

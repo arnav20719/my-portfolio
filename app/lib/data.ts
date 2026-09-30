@@ -306,7 +306,7 @@ export const certifications: Certification[] = [
 
 export const socialLinks: SocialLink[] = [
   { id: 'github', platform: 'github', url: 'https://github.com/arnav20719' },
-  { id: 'linkedin', platform: 'linkedin', url: 'https://linkedin.com/in/arnavsai' },
+  { id: 'linkedin', platform: 'linkedin', url: 'https://www.linkedin.com/in/arnav-raj-111z' },
   { id: 'email', platform: 'email', url: 'mailto:arnavsawarn143@gmail.com' },
   { id: 'phone', platform: 'phone', url: 'tel:+917294920365' },
 ];
