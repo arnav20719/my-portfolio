@@ -32,20 +32,47 @@ export default function ContactPage() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:arnavsawarn143@gmail.com?subject=${encodeURIComponent(
-      formData.subject || 'Portfolio Contact'
-    )}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
-    )}`;
-    window.location.href = mailtoLink;
-    setSubmitted(true);
+    setLoading(true);
+    setError('');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'dcae51d1-bf70-4c51-9630-a822f0cd7122',
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject || 'Portfolio Contact',
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setError('Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      setError('Network error. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const socialLinks = [
@@ -203,9 +230,9 @@ export default function ContactPage() {
           {submitted ? (
             <div style={{ padding: '80px 0', textAlign: 'center' }}>
               <div style={{ fontSize: '64px', marginBottom: '20px' }}>✅</div>
-              <h3 style={{ fontSize: '26px', fontWeight: 700, color: '#1A1A1A', marginBottom: '12px' }}>Message Ready!</h3>
+              <h3 style={{ fontSize: '26px', fontWeight: 700, color: '#1A1A1A', marginBottom: '12px' }}>Message Sent!</h3>
               <p style={{ fontSize: '16px', color: '#6B655B' }}>
-                Your email app should open with the message pre-filled.
+                Thanks for reaching out. I'll reply within 24 hours.
               </p>
               <button
                 onClick={() => setSubmitted(false)}
@@ -290,12 +317,19 @@ export default function ContactPage() {
                   </p>
                 </div>
 
+                {error && (
+                  <div style={{ padding: '14px 18px', backgroundColor: '#FEE2E2', color: '#DC2626', borderRadius: '10px', fontSize: '14px', border: '1px solid #FECACA' }}>
+                    ❌ {error}
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  style={{ width: '100%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px', padding: '18px 32px', backgroundColor: '#D9531E', color: 'white', fontWeight: 700, borderRadius: '10px', border: 'none', cursor: 'pointer', fontSize: '16px' }}
+                  disabled={loading}
+                  style={{ width: '100%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px', padding: '18px 32px', backgroundColor: loading ? '#9A948A' : '#D9531E', color: 'white', fontWeight: 700, borderRadius: '10px', border: 'none', cursor: loading ? 'not-allowed' : 'pointer', fontSize: '16px' }}
                 >
                   <Send style={{ width: '18px', height: '18px' }} />
-                  Send Message
+                  {loading ? 'Sending...' : 'Send Message'}
                 </button>
 
                 <p style={{ fontSize: '13px', color: '#9A948A', textAlign: 'center', margin: 0 }}>
