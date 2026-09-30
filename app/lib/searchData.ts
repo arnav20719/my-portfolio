@@ -1,4 +1,5 @@
 // app/lib/searchData.ts
+import { projects, socialLinks } from './data';
 
 export interface SearchItem {
   id: string;
@@ -6,9 +7,9 @@ export interface SearchItem {
   category: 'Navigation' | 'Projects' | 'Experience' | 'External';
   href?: string;
   action?: () => void;
-  icon?: React.ReactNode;
 }
 
+// Build search items dynamically from existing data
 export const searchItems: SearchItem[] = [
   // ===== NAVIGATION =====
   {
@@ -24,10 +25,10 @@ export const searchItems: SearchItem[] = [
     href: '/projects',
   },
   {
-    id: 'about',
-    label: 'About',
+    id: 'experience',
+    label: 'Experience',
     category: 'Navigation',
-    href: '/about',
+    href: '/experience',
   },
   {
     id: 'contact',
@@ -39,54 +40,25 @@ export const searchItems: SearchItem[] = [
     id: 'resume',
     label: 'Resume',
     category: 'Navigation',
-    href: '/resume',
+    href: '/resume.pdf',
   },
 
-  // ===== PROJECTS =====
-  {
-    id: 'courseadmission',
-    label: 'CourseAdmission - AI Admission Platform',
-    category: 'Projects',
-    href: '/projects#courseadmission',
-  },
-  {
-    id: 'qagpt',
-    label: 'Q&A GPT - AI Chatbot',
-    category: 'Projects',
-    href: '/projects#qagpt',
-  },
+  // ===== PROJECTS (Auto-generated from data.ts) =====
+  ...projects.map((project) => ({
+    id: project.id,
+    label: `${project.title} - ${project.description}`,
+    category: 'Projects' as const,
+    href: `/projects#${project.id}`,
+  })),
 
-  // ===== EXPERIENCE =====
-  {
-    id: 'outlier',
-    label: 'Outlier - Software Engineer for AI Training',
-    category: 'Experience',
-    href: '/about#experience',
-  },
-  {
-    id: 'aicte',
-    label: 'AICTE - AWS Cloud Virtual Intern',
-    category: 'Experience',
-    href: '/about#experience',
-  },
+  // ===== EXPERIENCE (Removed) =====
+  // No experience items shown in command palette
 
-  // ===== EXTERNAL LINKS =====
-  {
-    id: 'github',
-    label: 'GitHub',
-    category: 'External',
-    href: 'https://github.com/arnavsai',
-  },
-  {
-    id: 'linkedin',
-    label: 'LinkedIn',
-    category: 'External',
-    href: 'https://linkedin.com/in/arnavsai',
-  },
-  {
-    id: 'email',
-    label: 'Email',
-    category: 'External',
-    href: 'mailto:arnav@email.com',
-  },
-]; 
+  // ===== EXTERNAL LINKS (Auto-generated from data.ts) =====
+  ...socialLinks.map((link) => ({
+    id: link.id,
+    label: link.platform.charAt(0).toUpperCase() + link.platform.slice(1),
+    category: 'External' as const,
+    href: link.url,
+  })),
+];
